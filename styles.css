@@ -63,6 +63,3 @@
 
 .bio-photo--framed{background:#e4dfd6}
 .bio-photo--framed img{object-fit:contain;object-position:center}
-.bio-photo--sky{background:#d9d3c9}
-.bio-photo--sky::before{content:none}
-.bio-photo--sky img{object-fit:cover;object-position:center 28%;filter:none}
