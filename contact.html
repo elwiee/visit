@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Заявка на создание сайта и сотрудничество с eelwiee.">
+  <title>Связаться — eelwiee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">eelwiee<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">Главная</a><a href="portfolio.html">Работы</a><a href="services.html">Услуги</a><a href="about.html">Обо мне</a><a class="active" href="contact.html">Связаться</a>
+    </nav>
+    <a class="header-cta" href="https://t.me/eelwiee" target="_blank" rel="noopener">Написать</a>
+  </header>
+
+  <main>
+    <section class="page-hero wrap">
+      <p class="kicker">Сотрудничество</p>
+      <h1>Расскажите<br><em>о своей идее.</em></h1>
+      <p>Заполните короткую форму — она подготовит сообщение и откроет наш диалог в Telegram.</p>
+    </section>
+
+    <section class="collab wrap">
+      <div class="collab-intro">
+        <p class="kicker">Один контакт для проектов</p>
+        <h2>Давайте сделаем<br><em>хороший сайт.</em></h2>
+        <p>После отправки откроется Telegram с готовым сообщением. Проверьте его и нажмите «Отправить».</p>
+        <a href="https://t.me/eelwiee" target="_blank" rel="noopener">@eelwiee ↗</a>
+      </div>
+
+      <form class="collab-form" id="collab-form">
+        <label>
+          <span>Как вас зовут?</span>
+          <input name="name" type="text" placeholder="Имя / бренд" required autocomplete="name">
+        </label>
+        <label>
+          <span>Как с вами связаться?</span>
+          <input name="contact" type="text" placeholder="@username или email" required autocomplete="email">
+        </label>
+        <label>
+          <span>Какой сайт вам нужен?</span>
+          <select name="format" required>
+            <option value="" selected disabled>Выберите формат</option>
+            <option>Лендинг</option>
+            <option>Сайт-визитка</option>
+            <option>Многостраничный сайт до 25 страниц</option>
+            <option>Редизайн существующего сайта</option>
+            <option>Инфографика</option>
+            <option>Пока не знаю — нужна консультация</option>
+          </select>
+        </label>
+        <label>
+          <span>Немного деталей</span>
+          <textarea name="details" rows="4" placeholder="Расскажите о задаче, сроках и примерном бюджете" required></textarea>
+        </label>
+        <button class="collab-submit" type="submit">Отправить заявку <b>↗</b></button>
+        <p class="form-hint">Откроется Telegram @eelwiee. Форма не отправляет сообщение без вашего подтверждения.</p>
+      </form>
+    </section>
+
+    <section class="social-strip wrap">
+      <a href="https://t.me/eelwiee" target="_blank" rel="noopener">Telegram <span>↗</span></a>
+      <a href="https://www.instagram.com/eelwiee" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+      <a href="https://www.tiktok.com/@mrrewgi" target="_blank" rel="noopener">TikTok <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer wrap"><span>© 2026 eelwiee</span><div><a href="portfolio.html">Работы</a><a href="about.html">Обо мне</a></div></footer>
+
+  <script>
+    document.getElementById('collab-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const message = [
+        'Здравствуйте! Хочу обсудить сотрудничество.',
+        '',
+        'Имя / бренд: ' + data.get('name'),
+        'Контакт: ' + data.get('contact'),
+        'Формат: ' + data.get('format'),
+        'Детали: ' + data.get('details')
+      ].join('\n');
+      window.open('https://t.me/eelwiee?text=' + encodeURIComponent(message), '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>

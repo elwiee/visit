@@ -1,372 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eelwiee — сайты на заказ</title>
-  <meta
-    name="description"
-    content="Портфолио eelwiee: сайты на заказ, лендинги, визитки и промо-страницы для бизнеса с понятной структурой и сильной подачей."
-  >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Максим — разработка эстетичных и понятных сайтов для людей и бизнеса.">
+  <title>Максим — сайты с характером</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ambient ambient--left"></div>
-  <div class="ambient ambient--right"></div>
-
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="#top">eelwiee</a>
-      <nav class="nav">
-        <a href="#services">Услуги</a>
-        <a href="#portfolio">Портфолио</a>
-        <a href="#process">Как работаю</a>
-        <a href="#about">Биография</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-      <a class="button button--ghost" href="https://t.me/eelwiee" target="_blank" rel="noreferrer">Написать</a>
-    </div>
+  <header class="header">
+    <a class="logo" href="index.html">eelwiee<span>.</span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="active" href="index.html">Главная</a>
+      <a href="portfolio.html">Работы</a>
+      <a href="services.html">Услуги</a>
+      <a href="about.html">Обо мне</a>
+      <a href="contact.html">Связаться</a>
+    </nav>
+    <a class="header-cta" href="https://t.me/eelwiee" target="_blank" rel="noopener">Написать</a>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content panel">
-          <p class="eyebrow">Визитка веб-разработчика</p>
-          <h1>Делаю сайты, после которых бизнес выглядит собранно, современно и уверенно.</h1>
-          <p class="hero__lead">
-            Я собираю сайты на заказ для брендов, услуг и локального бизнеса. Моя задача —
-            сделать не просто красивую страницу, а понятную подачу, которая сразу объясняет
-            клиенту, что вы предлагаете и почему вам можно доверять.
-          </p>
-
-          <div class="hero__actions">
-            <a class="button" href="https://t.me/eelwiee" target="_blank" rel="noreferrer">Обсудить проект</a>
-            <a class="button button--ghost" href="#portfolio">Смотреть работы</a>
-          </div>
-
-          <div class="hero__stats">
-            <div class="stat-card">
-              <strong>5</strong>
-              <span>оформленных кейсов на сайте</span>
-            </div>
-            <div class="stat-card">
-              <strong>3</strong>
-              <span>главных формата: визитка, лендинг, инфографика</span>
-            </div>
-            <div class="stat-card">
-              <strong>100%</strong>
-              <span>адаптация под телефон и понятная структура</span>
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero__aside panel panel--highlight">
-          <p class="eyebrow">Что получает клиент</p>
-          <ul class="check-list">
-            <li>Чистый и современный дизайн без визуального шума</li>
-            <li>Сильный первый экран с понятным предложением</li>
-            <li>Продуманную структуру под услуги, кейсы и отзывы</li>
-            <li>Сайт, который удобно показать в переписке и рекламе</li>
-          </ul>
-
-          <div class="mini-preview">
-            <img src="assets/photo_2026-07-08_15-51-26.jpg" alt="Пример темного сайта для компьютерного клуба">
-            <img src="assets/photo_2026-07-08_15-51-14.jpg" alt="Пример светлого сайта для салона красоты">
-            <img src="assets/photo_2026-07-05_19-07-37.jpg" alt="Пример премиального портфолио в темных тонах">
-            <img src="assets/photo_2026-07-08_15-51-36.jpg" alt="Пример минималистичного сайта для фитнес-клуба">
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Услуги</p>
-          <h2>Что я могу сделать для клиента</h2>
-          <p>
-            Подхожу к сайту как к подаче бизнеса: важны не только цвета и блоки, но и то,
-            насколько быстро человек понимает суть предложения.
-          </p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card panel">
-            <h3>Сайт-визитка</h3>
-            <p>
-              Для эксперта, мастера, студии или локального бизнеса, которому нужно
-              показать себя аккуратно и убедительно.
-            </p>
-          </article>
-          <article class="service-card panel">
-            <h3>Лендинг под услугу</h3>
-            <p>
-              Одностраничный сайт с сильным первым экраном, понятными блоками и акцентом
-              на заявку или сообщение.
-            </p>
-          </article>
-          <article class="service-card panel">
-            <h3>Портфолио / промо</h3>
-            <p>
-              Сайт для презентации работ, проекта, клуба или бренда, где важны стиль,
-              атмосфера и подача.
-            </p>
-          </article>
+  <main>
+    <section class="hero wrap">
+      <p class="kicker">Веб-разработка · дизайн · 2026</p>
+      <h1>Сайты, которые<br><em>приятно показывать.</em></h1>
+      <div class="hero-bottom">
+        <p>Помогаю людям и небольшому бизнесу уверенно выглядеть в интернете. Без шаблонного шума и лишних слов.</p>
+        <div class="actions">
+          <a class="button" href="portfolio.html">Смотреть работы</a>
+          <a class="text-link" href="contact.html">Обсудить проект ↗</a>
         </div>
       </div>
     </section>
 
-    <section class="section section--wide" id="portfolio">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Портфолио</p>
-          <h2>Работы, которые можно сразу показать будущим клиентам</h2>
-          <p>
-            Я специально собрал проекты в разных нишах, чтобы было видно, что я умею
-            подстраивать стиль под задачу бизнеса, а не делать всем один и тот же сайт.
-          </p>
-        </div>
-
-        <div class="case-list">
-          <article class="case-card panel">
-            <div class="case-card__intro">
-              <div>
-                <p class="eyebrow">Кейс 01</p>
-                <h3>Сайт для шашлычной и доставки</h3>
-              </div>
-              <p>
-                Темный атмосферный лендинг с акцентом на аппетитную подачу, меню и быстрый заказ.
-              </p>
-            </div>
-            <div class="case-card__tags">
-              <span>Еда</span>
-              <span>Темный стиль</span>
-              <span>Промо-лендинг</span>
-            </div>
-            <div class="case-gallery case-gallery--three">
-              <a href="assets/photo_2026-07-05_19-02-06.jpg" class="case-shot case-shot--hero"><img src="assets/photo_2026-07-05_19-02-06.jpg" alt="Главный экран сайта шашлычной"></a>
-              <a href="assets/photo_2026-07-05_19-02-13.jpg" class="case-shot"><img src="assets/photo_2026-07-05_19-02-13.jpg" alt="Блок меню на сайте шашлычной"></a>
-              <a href="assets/photo_2026-07-05_19-02-16.jpg" class="case-shot"><img src="assets/photo_2026-07-05_19-02-16.jpg" alt="Галерея и описание на сайте шашлычной"></a>
-            </div>
-          </article>
-
-          <article class="case-card panel">
-            <div class="case-card__intro">
-              <div>
-                <p class="eyebrow">Кейс 02</p>
-                <h3>Премиальное портфолио digital creator</h3>
-              </div>
-              <p>
-                Глубокий сине-фиолетовый стиль с крупной типографикой для презентации навыков,
-                кейсов и подхода.
-              </p>
-            </div>
-            <div class="case-card__tags">
-              <span>Портфолио</span>
-              <span>Digital</span>
-              <span>Премиальная подача</span>
-            </div>
-            <div class="case-gallery case-gallery--three">
-              <a href="assets/photo_2026-07-05_19-07-37.jpg" class="case-shot case-shot--hero"><img src="assets/photo_2026-07-05_19-07-37.jpg" alt="Главный экран сайта digital creator"></a>
-              <a href="assets/photo_2026-07-05_19-07-40.jpg" class="case-shot"><img src="assets/photo_2026-07-05_19-07-40.jpg" alt="Блок проектов на сайте digital creator"></a>
-              <a href="assets/photo_2026-07-05_19-07-43.jpg" class="case-shot"><img src="assets/photo_2026-07-05_19-07-43.jpg" alt="Блок обо мне и контактов на сайте digital creator"></a>
-            </div>
-          </article>
-
-          <article class="case-card panel">
-            <div class="case-card__intro">
-              <div>
-                <p class="eyebrow">Кейс 03</p>
-                <h3>Салон красоты Atelier Beauty</h3>
-              </div>
-              <p>
-                Светлый и дорогой визуал для ниши красоты: услуги, портфолио, прайс, команда,
-                отзывы и форма записи.
-              </p>
-            </div>
-            <div class="case-card__tags">
-              <span>Beauty</span>
-              <span>Светлый стиль</span>
-              <span>Продажа услуг</span>
-            </div>
-            <div class="case-gallery case-gallery--four">
-              <a href="assets/photo_2026-07-08_15-51-14.jpg" class="case-shot case-shot--hero"><img src="assets/photo_2026-07-08_15-51-14.jpg" alt="Главный экран сайта салона красоты"></a>
-              <a href="assets/photo_2026-07-08_15-51-17.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-17.jpg" alt="Услуги и портфолио сайта салона красоты"></a>
-              <a href="assets/photo_2026-07-08_15-51-20.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-20.jpg" alt="Галерея и прайс сайта салона красоты"></a>
-              <a href="assets/photo_2026-07-08_15-51-23.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-23.jpg" alt="Команда и отзывы сайта салона красоты"></a>
-            </div>
-          </article>
-
-          <article class="case-card panel">
-            <div class="case-card__intro">
-              <div>
-                <p class="eyebrow">Кейс 04</p>
-                <h3>Neon Grid Arena — сайт компьютерного клуба</h3>
-              </div>
-              <p>
-                Яркий футуристичный лендинг с клубной атмосферой, зонами, тарифами и сильным
-                неоновым настроением.
-              </p>
-            </div>
-            <div class="case-card__tags">
-              <span>Gaming</span>
-              <span>Неон</span>
-              <span>Event-формат</span>
-            </div>
-            <div class="case-gallery case-gallery--three">
-              <a href="assets/photo_2026-07-08_15-51-26.jpg" class="case-shot case-shot--hero"><img src="assets/photo_2026-07-08_15-51-26.jpg" alt="Главный экран сайта компьютерного клуба"></a>
-              <a href="assets/photo_2026-07-08_15-51-29.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-29.jpg" alt="Форматы и тарифы сайта компьютерного клуба"></a>
-              <a href="assets/photo_2026-07-08_15-51-32.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-32.jpg" alt="Контактный блок сайта компьютерного клуба"></a>
-            </div>
-          </article>
-
-          <article class="case-card panel">
-            <div class="case-card__intro">
-              <div>
-                <p class="eyebrow">Кейс 05</p>
-                <h3>North Hall — сайт для фитнес-клуба</h3>
-              </div>
-              <p>
-                Спокойный минималистичный сайт с понятной подачей клуба, залов, тарифов
-                и формы для первого визита.
-              </p>
-            </div>
-            <div class="case-card__tags">
-              <span>Fitness</span>
-              <span>Минимализм</span>
-              <span>Запись на пробный визит</span>
-            </div>
-            <div class="case-gallery case-gallery--four">
-              <a href="assets/photo_2026-07-08_15-51-36.jpg" class="case-shot case-shot--hero"><img src="assets/photo_2026-07-08_15-51-36.jpg" alt="Главный экран сайта фитнес-клуба"></a>
-              <a href="assets/photo_2026-07-08_15-51-41.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-41.jpg" alt="Блоки и фотографии сайта фитнес-клуба"></a>
-              <a href="assets/photo_2026-07-08_15-51-44.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-44.jpg" alt="Преимущества сайта фитнес-клуба"></a>
-              <a href="assets/photo_2026-07-08_15-51-47.jpg" class="case-shot"><img src="assets/photo_2026-07-08_15-51-47.jpg" alt="Тарифы и форма заявки сайта фитнес-клуба"></a>
-            </div>
-          </article>
-        </div>
+    <section class="work-preview wrap">
+      <div class="section-title">
+        <p class="kicker">Избранные проекты</p>
+        <h2>Две работы.<br>Два разных характера.</h2>
       </div>
-    </section>
-
-    <section class="section" id="process">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Как работаю</p>
-          <h2>Чтобы заказчик сразу понимал, как строится процесс</h2>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-card panel">
-            <span>01</span>
-            <h3>Собираю задачу</h3>
-            <p>Уточняю нишу, стиль, что нужно показать на сайте и какое действие должно быть главным.</p>
-          </article>
-          <article class="process-card panel">
-            <span>02</span>
-            <h3>Продумываю структуру</h3>
-            <p>Сначала делаю логику блоков: первый экран, преимущества, кейсы, услуги, контакты.</p>
-          </article>
-          <article class="process-card panel">
-            <span>03</span>
-            <h3>Собираю визуал</h3>
-            <p>Подбираю стиль под нишу, чтобы сайт не был шаблонным и выглядел уместно для бизнеса.</p>
-          </article>
-          <article class="process-card panel">
-            <span>04</span>
-            <h3>Довожу до готового вида</h3>
-            <p>Адаптирую под телефон, добавляю ссылки, финальные правки и подготавливаю сайт к публикации.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Биография</p>
-          <h2>Кто я и почему мне близка работа над сайтами</h2>
-          <p>
-            После кейсов и процесса работы этот блок читается уместнее: сначала клиент
-            видит уровень, а потом уже знакомится со мной как с человеком.
-          </p>
-        </div>
-
-        <div class="about-grid">
-          <article class="about-card panel">
-            <h3>Мой путь</h3>
-            <p>
-              Я обычный школьник со своей маленькой мечтой, к которой иду каждый день.
-              Сейчас мой путь строится вокруг создания сайтов на заказ, потому что мне
-              нравится собирать сильную подачу, видеть результат работы и постоянно расти.
-            </p>
-            <p>
-              Я хочу развиваться в этой сфере дальше, делать все более сильные проекты и
-              со временем выстроить свое имя на хорошем уровне.
-            </p>
-          </article>
-
-          <article class="about-card panel">
-            <h3>Моя дисциплина</h3>
-            <p>
-              Я занимаюсь спортом, хожу в зал, плаваю в бассейне, много времени провожу на улице
-              и стараюсь каждый день проходить не меньше 10 тысяч шагов.
-            </p>
-            <p>
-              Еще я люблю велосипед на большие дистанции — от 20 до 100 км. Он помогает мне
-              проветривать голову, убирать лишние мысли и держать внутренний порядок.
-            </p>
-          </article>
-
-          <article class="about-card panel">
-            <h3>Как это влияет на работу</h3>
-            <p>
-              Я учусь на 4 и 5, стараюсь самостоятельно изучать английский и не люблю стоять на месте.
-              Мне нравится ощущение роста, когда сегодня я делаю лучше, чем вчера.
-            </p>
-            <p>
-              Поэтому и к сайтам я подхожу так же: спокойно, с вниманием к деталям и с желанием
-              сделать проект, который клиенту будет приятно показывать другим людям.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contacts">
-      <div class="container">
-        <div class="contact-card panel panel--highlight">
-          <div class="contact-card__content">
-            <p class="eyebrow">Контакты</p>
-            <h2>Если тебе нужен сайт, который выглядит сильно и понятно продает подачу — напиши мне.</h2>
-            <p>
-              Удобнее всего связаться со мной в Telegram. Также можно перейти в Instagram
-              и TikTok, чтобы посмотреть мои соцсети и визуальный стиль.
-            </p>
+      <div class="project-grid">
+        <article class="project project--peach">
+          <div class="browser-frame">
+            <iframe src="https://pavlovaoff.vercel.app/" title="Превью сайта PAVLOVA" loading="lazy"></iframe>
           </div>
-
-          <div class="contact-links">
-            <a class="contact-link" href="https://t.me/eelwiee" target="_blank" rel="noreferrer">
-              <span>Telegram</span>
-              <strong>@eelwiee</strong>
-            </a>
-            <a class="contact-link" href="https://www.instagram.com/eelwiee?igsh=dG5idHF6MDJpZ2g2" target="_blank" rel="noreferrer">
-              <span>Instagram</span>
-              <strong>eelwiee</strong>
-            </a>
-            <a class="contact-link" href="https://www.tiktok.com/@mrrewgi?_r=1&_t=ZS-97fkBS1AHFk" target="_blank" rel="noreferrer">
-              <span>TikTok</span>
-              <strong>@mrrewgi</strong>
-            </a>
+          <div class="project-meta">
+            <div><span>01 / Персональный сайт</span><h3>PAVLOVA</h3></div>
+            <a href="https://pavlovaoff.vercel.app/" target="_blank" rel="noopener" aria-label="Открыть PAVLOVA">↗</a>
           </div>
-        </div>
+        </article>
+        <article class="project project--ink">
+          <div class="browser-frame">
+            <iframe src="https://elwiee.github.io/Mill-Reef/" title="Превью сайта Mill Reef" loading="lazy"></iframe>
+          </div>
+          <div class="project-meta">
+            <div><span>02 / Сайт для бизнеса</span><h3>Mill Reef</h3></div>
+            <a href="https://elwiee.github.io/Mill-Reef/" target="_blank" rel="noopener" aria-label="Открыть Mill Reef">↗</a>
+          </div>
+        </article>
       </div>
+    </section>
+
+    <section class="short-offer wrap">
+      <p class="kicker">Что я делаю</p>
+      <div class="offer-row"><span>01</span><h3>Лендинги</h3><p>Одна страница для продукта, услуги или запуска.</p></div>
+      <div class="offer-row"><span>02</span><h3>Сайты-визитки</h3><p>Коротко и убедительно рассказывают о вас или бизнесе.</p></div>
+      <div class="offer-row"><span>03</span><h3>Многостраничные</h3><p>Сайты до 25 страниц для компаний и крупных проектов.</p></div>
+      <div class="offer-row"><span>04</span><h3>Редизайн</h3><p>Обновляю структуру и внешний вид существующего сайта.</p></div>
+      <a class="text-link offer-link" href="services.html">Подробнее об услугах ↗</a>
+    </section>
+
+    <section class="cta wrap">
+      <p class="kicker">Есть задача?</p>
+      <h2>Давайте сделаем<br><em>что-то хорошее.</em></h2>
+      <a class="button button--light" href="contact.html">Обсудить проект</a>
     </section>
   </main>
+
+  <footer class="footer wrap">
+    <span>© 2026 eelwiee</span>
+    <div><a href="https://t.me/eelwiee" target="_blank" rel="noopener">Telegram</a><a href="https://www.instagram.com/eelwiee" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@mrrewgi" target="_blank" rel="noopener">TikTok</a></div>
+  </footer>
 </body>
 </html>
