@@ -63,3 +63,12 @@
 
 .bio-photo--framed{background:#e4dfd6}
 .bio-photo--framed img{object-fit:contain;object-position:center}
+
+/* Third featured project */
+.project--forest{background:#242820;color:#f4f0e8}
+.project--wide{grid-column:1/-1}
+.project--wide .browser-frame{height:500px}
+.project--wide .browser-frame iframe{transform:scale(.72)}
+.project--featured{outline:1px solid rgba(33,31,28,.14);outline-offset:5px}
+
+@media(max-width:760px){.project--wide{grid-column:auto}.project--wide .browser-frame{height:350px}.project--wide .browser-frame iframe{transform:scale(.29)}}
