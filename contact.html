@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Заявка на создание сайта и сотрудничество с eelwiee.">
   <title>Связаться — eelwiee</title>
-  <link rel="icon" href="/favicon.jpg" type="image/jpeg" sizes="736x736">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -32,7 +33,7 @@
         <p class="kicker">Один контакт для проектов</p>
         <h2>Давайте сделаем<br><em>хороший сайт.</em></h2>
         <p>После отправки откроется Telegram с готовым сообщением. Проверьте его и нажмите «Отправить».</p>
-        <a href="https://t.me/eelwiee" target="_blank" rel="noopener">@eelwiee ↗</a>
+        <a href="https://t.me/managerlio" target="_blank" rel="noopener">@managerlio ↗</a>
       </div>
 
       <form class="collab-form" id="collab-form">
@@ -61,7 +62,7 @@
           <textarea name="details" rows="4" placeholder="Расскажите о задаче, сроках и примерном бюджете" required></textarea>
         </label>
         <button class="collab-submit" type="submit">Отправить заявку <b>↗</b></button>
-        <p class="form-hint">Откроется Telegram @eelwiee. Форма не отправляет сообщение без вашего подтверждения.</p>
+        <p class="form-hint">Откроется Telegram @managerlio. Форма не отправляет сообщение без вашего подтверждения.</p>
       </form>
     </section>
 
@@ -78,15 +79,25 @@
     document.getElementById('collab-form').addEventListener('submit', function (event) {
       event.preventDefault();
       const data = new FormData(event.currentTarget);
-      const message = [
-        'Здравствуйте! Хочу обсудить сотрудничество.',
-        '',
-        'Имя / бренд: ' + data.get('name'),
-        'Контакт: ' + data.get('contact'),
-        'Формат: ' + data.get('format'),
-        'Детали: ' + data.get('details')
-      ].join('\n');
-      window.open('https://t.me/eelwiee?text=' + encodeURIComponent(message), '_blank', 'noopener');
+      const isEnglish = document.documentElement.lang === 'en';
+      const message = isEnglish
+        ? [
+            'Hello! I would like to discuss a project.',
+            '',
+            'Name / brand: ' + data.get('name'),
+            'Contact: ' + data.get('contact'),
+            'Format: ' + data.get('format'),
+            'Details: ' + data.get('details')
+          ].join('\n')
+        : [
+            'Здравствуйте! Хочу обсудить сотрудничество.',
+            '',
+            'Имя / бренд: ' + data.get('name'),
+            'Контакт: ' + data.get('contact'),
+            'Формат: ' + data.get('format'),
+            'Детали: ' + data.get('details')
+          ].join('\n');
+      window.open('https://t.me/managerlio?text=' + encodeURIComponent(message), '_blank', 'noopener');
     });
   </script>
 </body>

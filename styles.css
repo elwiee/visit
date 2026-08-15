@@ -72,3 +72,8 @@
 .project--featured{outline:1px solid rgba(33,31,28,.14);outline-offset:5px}
 
 @media(max-width:760px){.project--wide{grid-column:auto}.project--wide .browser-frame{height:350px}.project--wide .browser-frame iframe{transform:scale(.29)}}
+
+/* Language switcher */
+.header{gap:0}.header .logo{margin-right:0}.header-cta{margin-right:48px}.lang-toggle{position:fixed;z-index:1000;top:24px;right:24px;padding:10px 13px;border:1px solid var(--line);border-radius:100px;background:rgba(241,238,232,.92);color:var(--ink);font:700 11px Manrope,sans-serif;letter-spacing:.08em;cursor:pointer;box-shadow:0 8px 24px rgba(33,31,28,.08);backdrop-filter:blur(10px);transition:background .2s,color .2s,border-color .2s}.lang-toggle:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+
+@media(max-width:760px){.lang-toggle{top:18px;right:14px}.header-cta{margin-left:0;margin-right:48px}.header .nav{order:4}}
