@@ -78,11 +78,12 @@
     'Сотрудничество': 'Collaboration',
     'Расскажите': 'Tell me',
     'о своей идее.': 'about your idea.',
-    'Заполните короткую форму — она подготовит сообщение и откроет наш диалог в Telegram.': 'Complete the short form and it will prepare a message and open our Telegram chat.',
-    'Один контакт для проектов': 'One contact for projects',
+    'Заполните короткую форму — она подготовит сообщение для менеджера и откроет диалог с ним в Telegram.': 'Complete the short form to prepare a message and open a Telegram chat with the manager.',
+    'Связь с менеджером': 'Contact the manager',
     'Давайте сделаем': "Let's build",
     'хороший сайт.': 'a great website.',
-    'После отправки откроется Telegram с готовым сообщением. Проверьте его и нажмите «Отправить».': 'Telegram will open with a ready-made message. Review it and press Send.',
+    'После заполнения откроется Telegram менеджера с готовым сообщением. Проверьте его и нажмите «Отправить».': 'The manager’s Telegram will open with a ready-made message. Review it and press Send.',
+    'Менеджер проекта: @managerlio ↗': 'Project manager: @managerlio ↗',
     'Как вас зовут?': 'What is your name?',
     'Как с вами связаться?': 'How can I reach you?',
     'Какой сайт вам нужен?': 'What kind of website do you need?',
@@ -91,8 +92,8 @@
     'Редизайн существующего сайта': 'Redesign of an existing website',
     'Пока не знаю — нужна консультация': "I'm not sure yet — I need advice",
     'Немного деталей': 'A few details',
-    'Отправить заявку': 'Send enquiry',
-    'Откроется Telegram @managerlio. Форма не отправляет сообщение без вашего подтверждения.': 'Telegram @managerlio will open. The form will not send anything without your confirmation.'
+    'Написать менеджеру': 'Message the manager',
+    'Вы перейдёте в Telegram менеджера @managerlio. Сообщение отправится только после вашего подтверждения.': 'You will open the manager’s Telegram at @managerlio. The message will only be sent after your confirmation.'
   };
 
   const attributeTranslations = {
@@ -112,7 +113,7 @@
   };
 
   const titles = {
-    'Максим — сайты с характером': 'Maxim — websites with character',
+    'eelwiee — небольшая студия': 'eelwiee — a small studio',
     'Работы — eelwiee': 'Work — eelwiee',
     'Услуги — eelwiee': 'Services — eelwiee',
     'Обо мне — eelwiee': 'About — eelwiee',
